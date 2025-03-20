@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=add_circle" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <div class="continer">
+        <div class="header">
+            <h2>Product Mng Sys</h2>
+            <!-- <ul>
+                <li><a class="active" href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">conected</a></li>
+                <li><a href="#">log in</a></li>
+            </ul> -->
+               <!-- From Uiverse.io by RiccardoRapelli --> 
+
+  
+        </div>
+
+        <div class="input">
+            <!--<div class="newProdect"><button class="new"><h2>new prodect </h2></button></div> -->
+            <div class="newProdect"><h2>new prodect<button class="new"><i class="fa-solid fa-plus"></i></button></h2></div>
+        
+            <div class="title">
+                <label for="title">title</label>
+                <input id="title" type="text" placeholder="title">
+                <label for="price">price</label>
+                <input id="price" type="number" placeholder="price">
+                <label for="catrgory">catrgory</label>
+                <input id="catrgory" type="text" placeholder="catrgory">
+                <input id="count" type="number" placeholder="count">
+            </div>
+            <div class="controlePrice">
+                <label for="ads">ads</label>
+                <input id="ads" type="number" placeholder="ads">
+                <label for="taxes">taxes</label>
+                <input id="taxes" type="number" placeholder="taxes">
+                <label for="discount">discount</label>
+                <input id="discount" type="number" placeholder="discount">
+                <small id="total">0</small>
+            </div>
+            <div class="create">
+                <button id="submit">Create</button>
+                <button id="cencel">Cencel</button>
+            </div>
+                 
+        </div>
+        <div class="output">
+            <div class="search">
+                <div class="btnSearch">
+                    <button onclick="getSearchMood(this.id)" id="searchTitle">Search By Title</button>
+                    <button onclick="getSearchMood(this.id)" id="searchCategory">Search By Category</button>
+                </div>
+                <div class="dele">
+                 <input type="text" id="search" placeholder="search"> 
+                <button class="deleteAll">delet all</button>   
+                </div> 
+            </div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>catrgory</th>
+                    <th>ads</th>
+                    <th>taxes</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>
