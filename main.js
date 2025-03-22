@@ -90,9 +90,9 @@ submit.onclick = function(){
         price:price.value,
         catrgory:catrgory.value,
         count:count.value,
-        ads:ads.value,
-        taxes:taxes.value,
-        discount:discount.value,
+        ads: ads.value.trim() !== "" ? ads.value : "0",
+        taxes: taxes.value.trim() !== "" ? taxes.value : "0",
+        discount: discount.value.trim() !== "" ? discount.value : "0",
         total:total.innerHTML,
     }
     
@@ -146,7 +146,7 @@ submit.onclick = function(){
     total.style.background = '#111';
  }
 
-// read show data in the table
+// show data in the table
 function showData (){
     let table = [];
 

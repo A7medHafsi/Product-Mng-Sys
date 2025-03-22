@@ -224,6 +224,7 @@ label{
   .deleteAll{
     display: none;
     width: 40%;
+    text-transform: uppercase;
     background-color: #aa1b1b;
     transition: .5s;
     &:hover{
